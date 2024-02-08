@@ -165,10 +165,14 @@ DISTRICT = [
 ]
 '''
 # // Members forms model //
-
+class FormToken(models.Model):
+    tokens = models.CharField(max_length=6, blank=False)
+    
+    pass
 
 class Member(models.Model):
     memberId = models.CharField(max_length=10, blank=True,unique=True)
+    gfxNumber = models.CharField(max_length=10, blank=False, null=False)
     region = models.CharField(max_length=100, blank=True, null=True)
     district = models.CharField(max_length=100, blank=True, null=True)
     zoneNumber = models.CharField(max_length=100,blank=True, null=True)
@@ -218,3 +222,4 @@ class Member(models.Model):
 
     def __str__(self):
         return str(self.memberId)
+    

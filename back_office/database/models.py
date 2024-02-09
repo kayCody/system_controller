@@ -166,8 +166,6 @@ DISTRICT = [
 '''
 # // Members forms model //
 class FormToken(models.Model):
-    tokens = models.CharField(max_length=6, blank=False)
-    
     pass
 
 class Member(models.Model):

@@ -16,7 +16,7 @@ import random
 class MemberView(generics.CreateAPIView):
   querset = Member.objects.all()
   serializer_class = MemberSerializer
-'''
+
 
 class GenerateCodeView(View):
     def get(self, request):
@@ -40,6 +40,7 @@ def GenerateToken(request):
 @api_view(['GET', 'POST'])
 def AuthenticateToken(request):
   pass
+'''
 
 # members Registrationn form
 @api_view(['GET', 'POST', 'PUT', 'DELETE'])

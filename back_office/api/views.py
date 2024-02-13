@@ -4,7 +4,7 @@ from rest_framework import status
 from rest_framework.decorators import parser_classes
 from rest_framework.parsers import JSONParser
 from rest_framework.decorators import api_view
-from database.models import Member, Token
+from database.models import Member
 from .serializer import MemberSerializer
 import random
 

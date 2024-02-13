@@ -48,7 +48,7 @@ MIDDLEWARE = [
 ]
 CORS_ALLOWED_ORIGINS = [
     "https://example.com",
-    "https://sub.example.com",
+    "https://forms-portal.gnacofa.com",
     "http://localhost:3000",
     "http://127.0.0.1:9000",
 ]
@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'back_office.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-'''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -93,7 +93,7 @@ DATABASES = {
         'PORT': '3306',        # Default MySQL port
     }
 }
-
+'''
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 AUTH_PASSWORD_VALIDATORS = [

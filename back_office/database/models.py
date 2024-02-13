@@ -170,7 +170,7 @@ class FormToken(models.Model):
 
 class Member(models.Model):
     memberId = models.CharField(max_length=10, blank=True,unique=True)
-    gfxNumber = models.CharField(max_length=10, blank=False, null=False)
+    oldMemberId = models.CharField(max_length=10, blank=True, null=True)
     region = models.CharField(max_length=100, blank=True, null=True)
     district = models.CharField(max_length=100, blank=True, null=True)
     zoneNumber = models.CharField(max_length=100,blank=True, null=True)

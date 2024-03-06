@@ -9,41 +9,8 @@ from .serializer import MemberSerializer
 import random
 
 
-# Create your views here.
-
-# GNACOFA MEMBER FORM API ROUTE///
-'''
-class MemberView(generics.CreateAPIView):
-  querset = Member.objects.all()
-  serializer_class = MemberSerializer
-
-
-class GenerateCodeView(View):
-    def get(self, request):
-        # Generate a random 6-digit code
-        random_code = ''.join([str(random.randint(0, 9)) for _ in range(6)])
-
-        # Create a VerificationCode object and save it to the database
-        verification_code = VerificationCode(code=random_code)
-        verification_code.save()
-
-        return render(request, 'your_template.html', {'code': random_code})
-
-@api_view(['GET', 'POST'])
-def GenerateToken(request):
-  random_code = ''.join([str(random.randint(0, 9)) for _ in range(6)]) # Generate a random 6-digit code
-  # Create a VerificationCode object and save it to the database
-  generated_code = Token(token=random_code)
-  generated_code.save()
-  return render(request, {'code': random_code})
-
-@api_view(['GET', 'POST'])
-def AuthenticateToken(request):
-  pass
-'''
-
 # members Registrationn form
-@api_view(['GET', 'POST', 'PUT', 'DELETE'])
+@api_view(['GET', 'POST'])
 # @parser_classes([JSONParser])
 def MembershipView(request, format=None):
   if request.method == 'GET':

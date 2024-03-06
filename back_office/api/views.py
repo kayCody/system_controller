@@ -9,7 +9,7 @@ from .serializer import MemberSerializer
 import random
 
 
-# members Registrationn form
+# Applicants portal
 @api_view(['GET', 'POST'])
 # @parser_classes([JSONParser])
 def MembershipView(request, format=None):
